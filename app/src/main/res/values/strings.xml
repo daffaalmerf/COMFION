@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">COMFION</string>
+
+    <string-array name="crimeList">
+        <item>Murder</item>
+        <item>Abuse</item>
+        <item>Harassment</item>
+        <item>Narcotic Drugs and Psychotropic Substances</item>
+        <item>Fraud</item>
+        <item>Theft</item>
+        <item>Embezzlement</item>
+        <item>Corruption</item>
+        <item>Mass Conflict</item>
+        <item>Abduction</item>
+    </string-array>
+
+    <string-array name="historyList">
+        <item>Report History</item>
+        <item>Trip History</item>
+    </string-array>
+</resources>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFragment"
+    android:background="#FFFFFF">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="32dp">
+
+        <include
+            android:id="@+id/homeProfile"
+            layout="@layout/home_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@id/homeContent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <include
+            android:id="@+id/homeContent"
+            layout="@layout/home_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/homeProfile" />
+
+        <com.getbase.floatingactionbutton.FloatingActionsMenu
+            android:id="@+id/fab_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:fab_addButtonColorNormal="@color/pickedBlue"
+            app:fab_addButtonColorPressed="@color/colorAccent"
+            app:fab_addButtonPlusIconColor="#FFFFFF"
+            app:fab_labelStyle="@style/customFab">
+            
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_colorNormal="@color/pickedJade"
+                app:fab_icon="@drawable/ic_view_list_white_24dp"
+                app:fab_title="Report"
+                app:fab_size="mini"/>
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_report"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_colorNormal="@color/pickedGreen"
+                app:fab_icon="@drawable/ic_report_white_24dp"
+                app:fab_title="History"
+                app:fab_size="mini"/>
+            
+        </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

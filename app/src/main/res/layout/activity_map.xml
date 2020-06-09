@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapActivity">
+
+    <fragment
+        android:id="@+id/mapGenerator"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.skyfishjy.library.RippleBackground
+        android:id="@+id/mapRipple"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:rb_color="#0099CC"
+        app:rb_duration="3000"
+        app:rb_radius="32dp"
+        app:rb_rippleAmount="4"
+        app:rb_scale="6">
+
+
+        <ImageView
+            android:id="@+id/mapHolder"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/map_holder"
+            android:translationY="-18dp" />
+
+        <com.mancj.materialsearchbar.MaterialSearchBar
+            android:id="@+id/mapBar"
+            style="@style/MaterialSearchBarLight"
+            app:mt_speechMode="false"
+            app:mt_hint="Search a place"
+            app:mt_maxSuggestionsCount="10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginTop="72dp"
+            app:mt_navIconEnabled="true"
+            android:elevation="5dp"
+            android:outlineProvider="bounds"
+            app:mt_placeholder="Search a place"/>
+
+        <Button
+            android:id="@+id/mapButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/button_background"
+            android:text="Select Location"
+            android:textColor="#FFFFFF"
+            android:layout_alignParentBottom="true"/>
+
+    </com.skyfishjy.library.RippleBackground>
+
+</RelativeLayout>

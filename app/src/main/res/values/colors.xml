@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2a2b37</color>
+    <color name="colorPrimaryDark">#000011</color>
+    <color name="colorAccent">#535461</color>
+    <color name="pickedBlue">#57C6ED</color>
+    <color name="pickedJade">#63D0C3</color>
+    <color name="pickedGreen">#6FDA9F</color>
+</resources>

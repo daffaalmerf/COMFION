@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.publictransportationapp">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true">
+        <activity android:name=".ViewImageActivity"
+            android:parentActivityName=".ReportDetailActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
+        <activity
+            android:name=".ReportDetailActivity"
+            android:parentActivityName=".HistoryActivity"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name=".HistoryActivity"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name=".VerificationStepThreeActivity"
+            android:parentActivityName=".ProfileActivity"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name=".VerificationStepTwoActivity"
+            android:parentActivityName=".ProfileActivity"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name=".VerificationStepOneActivity"
+            android:parentActivityName=".ProfileActivity"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name=".TransactionCodeActivity"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".ScanActivity"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name=".ProfileActivity"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.AppCompat" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDJvhG8vymI8fnZK0deQ3UI5SxcNhjn-_s" />
+
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity
+            android:name=".RegisterActivity"
+            android:parentActivityName=".LoginActivity"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name=".MapActivity"
+            android:parentActivityName=".ReportActivity"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name=".ReportActivity"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name=".ForgotPasswordActivity"
+            android:parentActivityName=".LoginActivity"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".SplashScreen"
+            android:theme="@style/splashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
